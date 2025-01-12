@@ -3,7 +3,11 @@
 
 # Prerequisites:
   - [**vJoy**](https://github.com/BrunnerInnovation/vJoy/releases/tag/v2.2.2.0)
+    - IMPORTANT: You need to download the SDK zip as well and grab these files:
+      - `SDK\c#\x86\vJoyInterface.dll`
+      - `SDK\c#\x86\vJoyInterfaceWrap.dll` 
   - [**FreePIE**](https://github.com/AndersMalmgren/FreePIE/releases/tag/1.11.724)
+    - IMPORTANT: Copy the above DLL files from the vJoy SDK into the root of your FreePIE installation folder
   - An Xbox controller with s***ty aftermarket analog sticks
     - (the ones with square deadzones)
   - [**x360ce**](https://github.com/x360ce/x360ce/releases/tag/4.17.0.0)
