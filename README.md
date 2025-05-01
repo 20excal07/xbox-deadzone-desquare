@@ -15,7 +15,7 @@
     - you can also use Steam Input instead, that's also fine.
    
 # IMPORTANT NOTE
-Some XInput games strictly requires the Xbox controller inputs to come from Player 1. To ensure that you're getting inputs with the new circular deadzones, start x360ce FIRST, and connect the controller second. Your controller should show that it is assigned to Player 2, meaning x360ce has been assigned to Player 1.
+Some XInput games strictly requires the Xbox controller inputs to come from Player 1. To ensure that you're getting inputs with the new circular deadzones, start x360ce FIRST, and connect the controller second. Your controller should show that it is assigned to Player 2, meaning x360ce has been assigned to Player 1. The script defaults to taking inputs from an Xbox controller that's been assigned as Player 2, so keep that in mind. You can manually change this in the script, if you want.
 
 # Why tho?
 I created this mainly out of spite for the stupid service person who swapped out my controller's dead analog stick for a new cheapo one, but didn't even bother seating the stick correctly on the board. This caused the new stick to misalign and unable to center properly, which screws up the deadzones, which in turn also screws up any calibration attempts on Windows. Turning the deadzones into a circle one allowed me to properly calibrate the controller on Windows and get the stick properly centered.
