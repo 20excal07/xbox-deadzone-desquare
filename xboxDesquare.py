@@ -4,13 +4,14 @@ def circle(x, y):
 	return (x * math.sqrt(1 - 0.5 * math.pow(y, 2)))
 
 if starting:
-	pollingRate = 160	# Hz; default is 160
+	pollingRate = 160   # Hz; default is 160
 	system.setThreadTiming(TimingTypes.HighresSystemTimer)
 	system.threadExecutionInterval = 1000 / pollingRate
 	vv = vJoy[0]
 	vvAxisMax = vv.axisMax
-	x360 = xbox360[0]
-	stickScale = 1.1	
+	player = 2   # this should match whichever player the controller is assigned to
+	x360 = xbox360[player-1]
+	stickScale = 1.1   # increase if the sticks aren't hitting the circular deadzones perfectly
 
 x = x360.leftStickX
 y = -x360.leftStickY
