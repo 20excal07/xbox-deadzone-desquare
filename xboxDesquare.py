@@ -10,16 +10,17 @@ if starting:
 	vv = vJoy[0]
 	vvAxisMax = vv.axisMax
 	x360 = xbox360[0]
+	stickScale = 1.1	
 
 x = x360.leftStickX
 y = -x360.leftStickY
 rx = x360.rightStickX
 ry = -x360.rightStickY
 
-vv.x = circle(x, y) * vvAxisMax
-vv.y = circle(y, x) * vvAxisMax
-vv.rx = circle(rx, ry) * vvAxisMax
-vv.ry = circle(ry, rx) * vvAxisMax
+vv.x = circle(x, y) * vvAxisMax * stickScale
+vv.y = circle(y, x) * vvAxisMax * stickScale
+vv.rx = circle(rx, ry) * vvAxisMax * stickScale
+vv.ry = circle(ry, rx) * vvAxisMax * stickScale
 vv.z = (x360.leftTrigger * 2 - 1) * vvAxisMax
 vv.rz = (x360.rightTrigger * 2 - 1) * vvAxisMax
 
